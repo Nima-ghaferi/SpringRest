@@ -17,6 +17,10 @@ public class Driver {
             Address address = student.getAddress();
             System.out.println("Street: " + address.getStreet());
             System.out.println("City: " + address.getCity());
+
+            for (String lang: student.getLanguages()) {
+                System.out.println("Language:" + lang);
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
